@@ -65,9 +65,9 @@ action :create do
     recursive true
   end
 
-  link ::File.join(node['mongodb']['data_dir'], instance_name, 'journal') do
-    to ::File.join(node['mongodb']['journal_dir'], instance_name)
-  end
+  # link ::File.join(node['mongodb']['data_dir'], instance_name, 'journal') do
+  #   to ::File.join(node['mongodb']['journal_dir'], instance_name)
+  # end
 ##############################################################
 ##############################################################
 
